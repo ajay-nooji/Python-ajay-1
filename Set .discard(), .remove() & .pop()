@@ -1,9 +1,0 @@
-_ = int(input())
-s = set(map(int, input().split()))
-for _ in range(int(input())):
-    ch = input().split()
-    if len(ch) == 1:
-        s.pop()
-    else:
-        eval("s.{0}({1})".format(*ch))
-print(sum(s))
